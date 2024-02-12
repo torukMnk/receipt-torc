@@ -25,6 +25,12 @@ describe '#Receipt' do
     it 'must return taxes and total' do
       subject.items_decorator
       expect(subject.taxes_decorator).to eq("Sales Taxes: 7.9")
+    end
+  end
+
+  context 'Total decorator' do
+    it 'must return total' do
+      subject.items_decorator
       expect(subject.total_decorator).to eq("Total: 98.38")
     end
   end
