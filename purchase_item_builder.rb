@@ -12,7 +12,6 @@ class PurchaseItemBuilder
 
     {
       quantity: item[:quantity],
-      label: item[:label],
       label: label_decorator(item),
       price: item[:price],
       imported: item[:imported],
