@@ -8,13 +8,6 @@ describe '#Receipt' do
                      "3 imported boxes of chocolates at 11.25" ]
   }
 
-  context 'Output decorator' do
-
-    it 'must return Output and number of items' do
-      expect(subject.out_put_decorator).to eq("Output 4")
-    end
-  end
-
   context 'Items decorator' do
 
     it 'must return items and totals' do

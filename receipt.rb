@@ -9,11 +9,6 @@ class Receipt
     @item_total = []
   end
 
-  def out_put_decorator
-    len = @purchases.length
-    "Output #{len}"
-  end
-
   def items_decorator
     items = []
     @purchases.each do |input|
@@ -39,7 +34,6 @@ class Receipt
   end
 
   def show
-    puts out_put_decorator
     items_decorator.each do |item|
       puts item
     end
